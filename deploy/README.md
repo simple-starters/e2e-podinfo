@@ -1,4 +1,4 @@
-# Deploy demo webapp
+# Deploy Podinfo Accelerator demo webapp
 
 Demo webapp manifests:
 

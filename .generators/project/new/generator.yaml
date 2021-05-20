@@ -1,0 +1,8 @@
+sources:
+  installFromRoot: true
+
+transformations:
+  replace:
+    - name: test-replace
+      token: Podinfo Accelerator
+      with: "#projectName"
