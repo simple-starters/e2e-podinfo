@@ -1,0 +1,26 @@
+accelerator:
+  displayName: PodInfo
+  description: Podinfo is a tiny web application made with Go that showcases best practices of running microservices in Kubernetes. Forked from https://github.com/stefanprodan/podinfo.
+  iconUrl: https://kubernetes.io/images/favicon.png
+  tags:
+    - Go
+    - Kubernetes
+
+engine:
+  resources:
+    - name: specific-file
+      includes: ["ACCELERATOR.md"]
+      transformations:
+        replace:
+          - token: Podinfo Accelerator
+            with: "#projectName"
+          - token: changelog
+            with: "#projectDescription"
+    - name: markdown-files
+      includes: ["**/*.md"]
+      transformations:
+        replace:
+          - token: Podinfo Accelerator
+            with: "#projectName"
+    - name: the-rest
+      includes: ["**"]
