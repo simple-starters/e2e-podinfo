@@ -7,20 +7,19 @@ accelerator:
     - Kubernetes
 
 engine:
-  resources:
-    - name: specific-file
-      includes: ["ACCELERATOR.md"]
+  sources:
+    - includes: ["**"]
+    - includes: ["ACCELERATOR.md"]
       transformations:
-        replace:
-          - token: Podinfo Accelerator
-            with: "#projectName"
-          - token: changelog
-            with: "#projectDescription"
-    - name: markdown-files
-      includes: ["**/*.md"]
+      - type: ReplaceText
+        substitutions:
+        - text: Podinfo Accelerator
+          with: "#projectName"
+        - text: changelog
+          with: "#projectDescription"
+    - includes: ["**/*.md"]
       transformations:
-        replace:
-          - token: Podinfo Accelerator
-            with: "#projectName"
-    - name: the-rest
-      includes: ["**"]
+      - type: ReplaceText
+        substitutions:
+        - text: Podinfo Accelerator
+          with: "#projectName"
