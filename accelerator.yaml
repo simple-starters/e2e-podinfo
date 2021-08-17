@@ -7,13 +7,11 @@ accelerator:
     - Kubernetes
   options:
   - name: projectDescription
-    label: Description
-    dataType: string
+    label: Description    
     display: true
     defaultValue: ''
-  - name: description
-    label: Description
-    dataType: string
+  - name: something
+    label: Something    
     display: true
     defaultValue: ''
     
@@ -27,7 +25,7 @@ engine:
         - text: Podinfo Accelerator
           with: "#projectName"
         - text: changelog
-          with: "#description"
+          with: "#something"
     - includes: ["**/*.md"]
       transformations:
       - type: ReplaceText
