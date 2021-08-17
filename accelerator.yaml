@@ -5,13 +5,9 @@ accelerator:
   tags:
     - Go
     - Kubernetes
-  options:
-  - name: projectDescription
-    label: Description    
-    display: true
-    defaultValue: ''
-  - name: something
-    label: Something    
+  options:  
+  - name: description
+    label: Description
     display: true
     defaultValue: ''
     
@@ -25,7 +21,7 @@ engine:
         - text: Podinfo Accelerator
           with: "#projectName"
         - text: changelog
-          with: "#something"
+          with: "#description"
     - includes: ["**/*.md"]
       transformations:
       - type: ReplaceText
