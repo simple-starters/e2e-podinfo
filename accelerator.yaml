@@ -8,12 +8,15 @@ accelerator:
   options:
   - name: projectDescription
     label: Description
+    dataType: string
     display: true
     defaultValue: ''
   - name: description
     label: Description
+    dataType: string
     display: true
     defaultValue: ''
+    
 engine:
   sources:
     - includes: ["**"]
