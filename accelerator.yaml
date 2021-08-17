@@ -10,6 +10,10 @@ accelerator:
     label: Description
     display: true
     defaultValue: ''
+  - name: description
+    label: Description
+    display: true
+    defaultValue: ''
 engine:
   sources:
     - includes: ["**"]
@@ -20,7 +24,7 @@ engine:
         - text: Podinfo Accelerator
           with: "#projectName"
         - text: changelog
-          with: "#projectDescription"
+          with: "#description"
     - includes: ["**/*.md"]
       transformations:
       - type: ReplaceText
