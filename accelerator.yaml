@@ -5,7 +5,11 @@ accelerator:
   tags:
     - Go
     - Kubernetes
-
+  options:
+  - name: projectDescription
+    label: Description
+    display: true
+    defaultValue: ''
 engine:
   sources:
     - includes: ["**"]
