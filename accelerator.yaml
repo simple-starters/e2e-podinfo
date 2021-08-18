@@ -28,5 +28,3 @@ engine:
         substitutions:
         - text: Podinfo Accelerator
           with: "#projectName"
-        - text: changelog
-          with: "#projectDescription"
