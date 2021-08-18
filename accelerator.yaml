@@ -5,12 +5,12 @@ accelerator:
   tags:
     - Go
     - Kubernetes
-  options:  
+  options:
   - name: description
     label: Description
     display: true
     defaultValue: ''
-    
+
 engine:
   sources:
     - includes: ["**"]
@@ -18,7 +18,7 @@ engine:
       transformations:
       - type: ReplaceText
         substitutions:
-        - text: Podinfo Accelerator
+        - text: Podinfo
           with: "#projectName"
         - text: changelog
           with: "#description"
@@ -26,5 +26,5 @@ engine:
       transformations:
       - type: ReplaceText
         substitutions:
-        - text: Podinfo Accelerator
+        - text: Podinfo
           with: "#projectName"
