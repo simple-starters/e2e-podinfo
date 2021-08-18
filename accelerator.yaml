@@ -6,7 +6,7 @@ accelerator:
     - Go
     - Kubernetes
   options:
-  - name: description
+  - name: projectDescription
     label: Description
     display: true
     defaultValue: ''
@@ -18,13 +18,15 @@ engine:
       transformations:
       - type: ReplaceText
         substitutions:
-        - text: Podinfo
-          with: "#projectName"
         - text: changelog
-          with: "#description"
+          with: "#projectDescription"
+        - text: Podinfo Accelerator
+          with: "#projectName"
     - includes: ["**/*.md"]
       transformations:
       - type: ReplaceText
         substitutions:
-        - text: Podinfo
+        - text: Podinfo Accelerator
           with: "#projectName"
+        - text: changelog
+          with: "#projectDescription"
