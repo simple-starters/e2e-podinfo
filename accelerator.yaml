@@ -14,17 +14,17 @@ accelerator:
 engine:
   sources:
     - includes: ["**"]
+    - includes: ["**/*.md"]
+      transformations:
+      - type: ReplaceText
+        substitutions:
+        - text: Podinfo Accelerator
+          with: "#projectName"
     - includes: ["ACCELERATOR.md"]
       transformations:
       - type: ReplaceText
         substitutions:
         - text: changelog
           with: "#projectDescription"
-        - text: Podinfo Accelerator
-          with: "#projectName"
-    - includes: ["**/*.md"]
-      transformations:
-      - type: ReplaceText
-        substitutions:
         - text: Podinfo Accelerator
           with: "#projectName"
